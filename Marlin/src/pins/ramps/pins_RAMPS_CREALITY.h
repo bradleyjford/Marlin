@@ -25,7 +25,7 @@
   #error "Creality3D RAMPS supports only 2 hotends / E-steppers. Comment out this line to continue."
 #endif
 
-#define BOARD_INFO_NAME "Creality3D RAMPS"
+#define BOARD_INFO_NAME "Creality3D 2.5"
 
 //
 // Heaters / Fans
@@ -50,6 +50,9 @@
 #if ENABLED(CASE_LIGHT_ENABLE) && !defined(CASE_LIGHT_PIN)
   #define CASE_LIGHT_PIN                      65
 #endif
+
+#define Z_MIN_PIN                         19
+#define Z_MAX_PIN                         18
 
 #include "pins_RAMPS.h"
 
